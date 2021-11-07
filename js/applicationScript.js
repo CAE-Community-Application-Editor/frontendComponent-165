@@ -58,7 +58,7 @@ var loadSongs = function(){
 
 //end variable declaration
 
-  client.sendRequest("GET", ”songs”, "", "", {}, false,
+  client.sendRequest("GET", "songs”, "", "", {}, false,
   function(data, type) {
     var arr = data.songs; var text = "";
 arr.forEach(function(item) { text += item.title + ", "
